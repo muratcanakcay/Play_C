@@ -36,7 +36,8 @@ int main(){
   return 0;
 }
 
-void minmax(int i1, int i2, int i3){
+void minmax(int i1, int i2, int i3)
+{
   int min, max;
   if (i1 <= i2){
     if (i2 <= i3){
@@ -73,23 +74,29 @@ void minmax(int i1, int i2, int i3){
 printf("The minimum of the three numbers is %d, and the maximum is %d.\n", min, max);
 }
 
-void pyramid(int h, int n, char c){
-  for(int i=0; i<n; i++){
-    for (int k = 0;k < h;k++){
+void pyramid(int h, int n, char c)
+{
+  for(int i=0; i<n; i++)
+  {
+    for (int k = 0;k < h;k++)
+    {
       printf(" ");
     }
-    for (int k = 0; k < i+1; k++){
+    for (int k = 0; k < i+1; k++)
+    {
       printf("%c", c+i);
     }
   printf("\n");
   }
 }
 
-float arithmetic_mean(float f1, float f2){
+float arithmetic_mean(float f1, float f2)
+{
   return (f1 + f2) / 2;
 }
 
-void check_negative(int i1){
+void check_negative(int i1)
+{
    if (i1 < 0) printf("The number is negative.\n");
    else printf("The number is %s.\n", i1>0?"positive" : "zero");
 }
