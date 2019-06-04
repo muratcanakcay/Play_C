@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-main()
+void main()
 {
     void add_pointer(int* p_x)
     {
         *p_x = *p_x + 1;
     }
-    void fake_add_pointer(p_x)
+    void fake_add_pointer(int p_x)
     {
         p_x = p_x + 1;
     }
